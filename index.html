@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>hudaierbas.com</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <section id="home">
+        <div class="home-container">
+            <div>
+                <h1>Hello, I'm <span>Hüdai Erbaş</span>.</h1>
+                <h1>I'm a web developer.</h1>
+                <a href="#about" type="button" class="cta">View my work</a>
+            </div>
+        </div>
+        <div id="nav" class="animate__animated">
+            <div class="nav-container">
+                <a id="home-link" href="#home">HOME</a>
+                <a id="about-link" href="#about">ABOUT</a>
+                <a id="portfolio-link" href="#portfolio">PORTFOLIO</a>
+                <a id="contact-link" href="#contact">CONTACT</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="about container">
+            <div class="about-top">
+                <h1 class="section-title animate__animated anim" data-animation="slideInLeft">ABOUT</h1>
+                <div class="section-title-line animate__animated anim" data-animation="slideInLeft"></div>
+            </div>
+            <div class="about-bottom">
+                <div class="about-bottomLeft animate__animated anim" data-animation="slideInLeft">
+                    <div class="videoCont">
+                        <video id="aboutVideo" src="img/aboutShort.mp4"></video>
+                        <div id="video1">Responsive</div>
+                        <div id="video2">Dynamic</div>
+                    </div>
+                    
+                    <h2>Who am I ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, veritatis atque dignissimos molestiae, qui voluptatem dolorem tenetur hic amet magnam et dolores ipsam ullam blanditiis vitae perspiciatis illo in totam?</p>
+                    <a href="#contact">Let's design your dreams.</a>
+                </div>
+                <div class="about-bottomRight animate__animated anim" data-animation="slideInRight">
+                    <h2 id="skills">Skills</h2>
+                    <div class="skills-container">
+                        <div id="scene" class="scene" onclick="toggleAnimation()">
+                            <div class="box box1 ">
+                                <div class="box__face box__face--front">HTML</div>
+                                <div class="box__face box__face--back">HTML</div>
+                                <div class="box__face box__face--right">HTML</div>
+                                <div class="box__face box__face--left">HTML</div>
+                                <div class="box__face box__face--top">HTML</div>
+                                <div class="box__face box__face--bottom">HTML</div>
+                            </div>
+                            <div class="box box2">
+                                <div class="box__face box__face--front"></div>
+                                <div class="box__face box__face--back"></div>
+                                <div class="box__face box__face--right"></div>
+                                <div class="box__face box__face--left"></div>
+                                <div class="box__face box__face--top"></div>
+                                <div class="box__face box__face--bottom"></div>
+                            </div>
+                            <div class="box box3">
+                                <div class="box__face box__face--front">CSS</div>
+                                <div class="box__face box__face--back">CSS</div>
+                                <div class="box__face box__face--right">CSS</div>
+                                <div class="box__face box__face--left">CSS</div>
+                                <div class="box__face box__face--top">CSS</div>
+                                <div class="box__face box__face--bottom">CSS</div>
+                            </div>
+                        
+                            <div class="box box4">
+                                <div class="box__face box__face--front">JAVASCRIPT</div>
+                                <div class="box__face box__face--back">JAVASCRIPT</div>
+                                <div class="box__face box__face--right">JS</div>
+                                <div class="box__face box__face--left">JS</div>
+                                <div class="box__face box__face--top">JAVASCRIPT</div>
+                                <div class="box__face box__face--bottom">JAVASCRIPT</div>
+                            </div>
+                            <div class="box box5">
+                                <div class="box__face box__face--front">PHP</div>
+                                <div class="box__face box__face--back">PHP</div>
+                                <div class="box__face box__face--right">PHP</div>
+                                <div class="box__face box__face--left">PHP</div>
+                                <div class="box__face box__face--top">PHP</div>
+                                <div class="box__face box__face--bottom">PHP</div>
+                            </div>
+                            <div class="box box6">
+                                <div class="box__face box__face--front"></div>
+                                <div class="box__face box__face--back"></div>
+                                <div class="box__face box__face--right"></div>
+                                <div class="box__face box__face--left"></div>
+                                <div class="box__face box__face--top"></div>
+                                <div class="box__face box__face--bottom"></div>
+                            </div>
+                        
+                            <div class="box box7">
+                                <div class="box__face box__face--front">REACT</div>
+                                <div class="box__face box__face--back">REACT</div>
+                                <div class="box__face box__face--right">REACT</div>
+                                <div class="box__face box__face--left">REACT</div>
+                                <div class="box__face box__face--top">REACT</div>
+                                <div class="box__face box__face--bottom">REACT</div>
+                            </div>
+                            <div class="box box8">
+                                <div class="box__face box__face--front">MYSQL</div>
+                                <div class="box__face box__face--back">MYSQL</div>
+                                <div class="box__face box__face--right">MYSQL</div>
+                                <div class="box__face box__face--left">MYSQL</div>
+                                <div class="box__face box__face--top">MYSQL</div>
+                                <div class="box__face box__face--bottom">MYSQL</div>
+                            </div>
+                            <div class="box box9">
+                                <div class="box__face box__face--front"></div>
+                                <div class="box__face box__face--back"></div>
+                                <div class="box__face box__face--right"></div>
+                                <div class="box__face box__face--left"></div>
+                                <div class="box__face box__face--top"></div>
+                                <div class="box__face box__face--bottom"></div>
+                            </div>
+                            <div class="box box10">
+                                <div class="box__face box__face--front">MONGO</div>
+                                <div class="box__face box__face--back">MONGO</div>
+                                <div class="box__face box__face--right">MONGO</div>
+                                <div class="box__face box__face--left">MONGO</div>
+                                <div class="box__face box__face--top">MONGO</div>
+                                <div class="box__face box__face--bottom">MONGO</div>
+                            </div>
+                            <div class="box box11">
+                                <div class="box__face box__face--front">NODEJS</div>
+                                <div class="box__face box__face--back">NODEJS</div>
+                                <div class="box__face box__face--right">NODE</div>
+                                <div class="box__face box__face--left">NODE</div>
+                                <div class="box__face box__face--top">NODEJS</div>
+                                <div class="box__face box__face--bottom">NODEJS</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio container">
+             <div class="portolio-top">
+                <h1 class="section-title animate__animated anim" data-animation="slideInRight">PROJECTS</h1>
+                <div class="section-title-line animate__animated anim" data-animation="slideInRight"></div>
+            </div>
+            <div id="portfolioBottom" class="portfolio-bottom">
+                <div class="portfolio-item animate__animated" style="opacity: 0; " >
+                    <div class="portfolio-item-exp">
+                        <h3>Portfolio Item 1</h3>
+                        <p>React JS / Node JS</p>
+                    </div>
+                    <div class="portfolio-item-button-container">
+                        <div class="portfolio-item-button" onclick="openModal(1)">LEARN MORE</div>
+                    </div>                    
+                </div>
+                <div class="portfolio-item animate__animated" style="animation-delay: .2s; opacity: 0; transition-delay: .2s;">
+                    <div class="portfolio-item-exp">
+                        <h3>Portfolio Item 1</h3>
+                        <p>React JS / Node JS</p>
+                    </div>
+                    <div class="portfolio-item-button-container">
+                        <div class="portfolio-item-button" onclick="openModal(2)">LEARN MORE</div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated" style="animation-delay: .3s; opacity: 0; transition-delay: .3s;">
+                    <div class="portfolio-item-exp">
+                        <h3>Portfolio Item 1</h3>
+                        <p>React JS / Node JS</p>
+                    </div>
+                    <div class="portfolio-item-button-container">
+                        <div class="portfolio-item-button" onclick="openModal(3)">LEARN MORE</div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated" style="animation-delay: .4s; opacity: 0; transition-delay: .4s;">
+                    <div class="portfolio-item-exp">
+                        <h3>Portfolio Item 1</h3>
+                        <p>React JS / Node JS</p>
+                    </div>
+                    <div class="portfolio-item-button-container">
+                        <div class="portfolio-item-button" onclick="openModal(4)">LEARN MORE</div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div id="modal" class="modal">
+            <div id="modalCont" class="modal-container animate__animated">
+                <div id="modalImg" class="modal-img">
+                    <div id="modalImgRight" onclick="changeModalImg(1)">
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </div>
+                    <div id="modalImgLeft" onclick="changeModalImg(0)">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle" ></h2>
+                    <h3 id="modalSubTitle"></h3>
+                    <div class="modal-line"></div>
+                    <p id="modalDetail"></p>
+                    <div class="modal-bottom">
+                        <div class="modal-links">
+                            <a id="modalLinkLive" href="#">VIEW SITE</a>
+                            <a id="modalLinkCode" href="#">VIEW CODE</a>
+                        </div>
+                        <div class="modal-close" onclick="closeModal()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact container">
+            <div class="contact-top">
+                <h1 class="section-title animate__animated anim" data-animation="slideInLeft">CONTACT</h1>
+                <div class="section-title-line animate__animated anim" data-animation="slideInRight"></div>
+                <h2 class="animate__animated anim" data-animation="slideInLeft">Have a question or want to work together?</h2>
+            </div>
+            <div class="contact-bottom animate__animated anim" data-animation="slideInRight">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <textarea placeholder="Your message" name="message" id="message" cols="50" rows="10" > </textarea>
+                    </div>
+                    <button type="submit" class="cta">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer">
+                <div class="iconlink">
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footnote">HUDAI ERBAS <span>©2021</span></div>
+        </footer>
+    </section>
+    <script src="js/index.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
