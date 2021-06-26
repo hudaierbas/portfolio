@@ -105,10 +105,11 @@ a {
 .about-bottomLeft,
 .about-bottomRight {
   height: 650px;
+  width: 100%;
   flex: 0.5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -123,10 +124,8 @@ a {
   margin-bottom: 15px;
 }
 
-#skills {
-  position: absolute;
-  top: 50px;
-  left: 50%;
+.about-bottomLeft > p {
+  padding: 10px;
 }
 
 .videoCont {
@@ -223,7 +222,7 @@ a {
   justify-content: center;
 }
 .portfolio-item {
-  width: 500px;
+  min-width: 500px;
   height: 350px;
   background: url("../img/he.png") center center / cover;
   margin: 10px;
@@ -364,7 +363,7 @@ a {
   line-height: 2.3rem;
 }
 .modal-line {
-  width: 600px;
+  width: 100%;
   border-top: 1px solid rgb(168, 163, 163);
   margin: 20px 0;
 }
@@ -537,13 +536,13 @@ a {
 .nav-container {
   width: 1300px;
 }
-.nav-container > a {
+.nav-mob > a {
   color: white;
   font-size: initial;
   margin: 20px;
   transition: 0.5s ease;
 }
-.nav-container > a:hover {
+.nav-mob > a:hover {
   color: #e31b6d;
 }
 .fixed {
@@ -562,4 +561,102 @@ a {
 .anim {
   opacity: 0;
   transition: 0.5s ease;
+}
+
+.hamburger {
+  height: 20px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.hamburger:hover > div {
+  background-color: #eb48a7;
+}
+
+.hamburger > div {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+
+.ham-active {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+  .cta {
+    font-size: 1.5rem;
+    width: 190px;
+  }
+  .portfolio-item {
+    flex: 1;
+    min-width: 300px !important;
+    margin: 0;
+  }
+  #aboutVideo {
+    width: 100vw;
+  }
+  .about-bottomLeft {
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-container {
+    width: 100vw;
+    min-height: 700px !important;
+  }
+  .modal {
+    padding-top: 0;
+    align-items: center;
+  }
+  .modal-img {
+    width: 100%;
+  }
+  .modal-info {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-container {
+    width: 100%;
+    position: relative;
+  }
+  .nav-mob {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 27px;
+    left: 0;
+    background-color: #1b242f;
+    padding-top: 50px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5 ease;
+  }
+  #nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+  }
 }

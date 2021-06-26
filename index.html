@@ -21,11 +21,19 @@
         </div>
         <div id="nav" class="animate__animated">
             <div class="nav-container">
-                <a id="home-link" href="#home">HOME</a>
-                <a id="about-link" href="#about">ABOUT</a>
-                <a id="portfolio-link" href="#portfolio">PORTFOLIO</a>
-                <a id="contact-link" href="#contact">CONTACT</a>
+                <div id="nav-mob" class="nav-mob">
+                    <a id="home-link" href="#home" onclick="toggleNav()">HOME</a>
+                    <a id="about-link" href="#about" onclick="toggleNav()">ABOUT</a>
+                    <a id="portfolio-link" href="#portfolio" onclick="toggleNav()">PORTFOLIO</a>
+                    <a id="contact-link" href="#contact" onclick="toggleNav()">CONTACT</a>
+                </div>   
+                <div class="hamburger" onclick="toggleNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
+            
         </div>
     </section>
     
@@ -38,9 +46,9 @@
             <div class="about-bottom">
                 <div class="about-bottomLeft animate__animated anim" data-animation="slideInLeft">
                     <div class="videoCont">
-                        <video id="aboutVideo" src="img/aboutShort.mp4"></video>
-                        <div id="video1">Responsive</div>
-                        <div id="video2">Dynamic</div>
+                        <video id="aboutVideo" src="img/aboutShort.mp4" muted="muted"></video>
+                        <!-- <div id="video1">Responsive</div>
+                        <div id="video2">Dynamic</div> -->
                     </div>
                     
                     <h2>Who am I ?</h2>
@@ -68,12 +76,12 @@
                                 <div class="box__face box__face--bottom"></div>
                             </div>
                             <div class="box box3">
-                                <div class="box__face box__face--front">CSS</div>
-                                <div class="box__face box__face--back">CSS</div>
-                                <div class="box__face box__face--right">CSS</div>
-                                <div class="box__face box__face--left">CSS</div>
-                                <div class="box__face box__face--top">CSS</div>
-                                <div class="box__face box__face--bottom">CSS</div>
+                                <div class="box__face box__face--front"></div>
+                                <div class="box__face box__face--back"></div>
+                                <div class="box__face box__face--right"></div>
+                                <div class="box__face box__face--left"></div>
+                                <div class="box__face box__face--top"></div>
+                                <div class="box__face box__face--bottom"></div>
                             </div>
                         
                             <div class="box box4">
@@ -85,20 +93,20 @@
                                 <div class="box__face box__face--bottom">JAVASCRIPT</div>
                             </div>
                             <div class="box box5">
-                                <div class="box__face box__face--front">PHP</div>
-                                <div class="box__face box__face--back">PHP</div>
-                                <div class="box__face box__face--right">PHP</div>
-                                <div class="box__face box__face--left">PHP</div>
-                                <div class="box__face box__face--top">PHP</div>
-                                <div class="box__face box__face--bottom">PHP</div>
+                                <div class="box__face box__face--front">CSS</div>
+                                <div class="box__face box__face--back">CSS</div>
+                                <div class="box__face box__face--right">CSS</div>
+                                <div class="box__face box__face--left">CSS</div>
+                                <div class="box__face box__face--top">CSS</div>
+                                <div class="box__face box__face--bottom">CSS</div>
                             </div>
                             <div class="box box6">
-                                <div class="box__face box__face--front"></div>
-                                <div class="box__face box__face--back"></div>
-                                <div class="box__face box__face--right"></div>
-                                <div class="box__face box__face--left"></div>
-                                <div class="box__face box__face--top"></div>
-                                <div class="box__face box__face--bottom"></div>
+                                <div class="box__face box__face--front">SQL</div>
+                                <div class="box__face box__face--back">SQL</div>
+                                <div class="box__face box__face--right">SQL</div>
+                                <div class="box__face box__face--left">SQL</div>
+                                <div class="box__face box__face--top">SQL</div>
+                                <div class="box__face box__face--bottom">SQL</div>
                             </div>
                         
                             <div class="box box7">
@@ -110,12 +118,12 @@
                                 <div class="box__face box__face--bottom">REACT</div>
                             </div>
                             <div class="box box8">
-                                <div class="box__face box__face--front">MYSQL</div>
-                                <div class="box__face box__face--back">MYSQL</div>
-                                <div class="box__face box__face--right">MYSQL</div>
-                                <div class="box__face box__face--left">MYSQL</div>
-                                <div class="box__face box__face--top">MYSQL</div>
-                                <div class="box__face box__face--bottom">MYSQL</div>
+                                <div class="box__face box__face--front">.NET</div>
+                                <div class="box__face box__face--back">.NET</div>
+                                <div class="box__face box__face--right">.NET</div>
+                                <div class="box__face box__face--left">.NET</div>
+                                <div class="box__face box__face--top">.NET</div>
+                                <div class="box__face box__face--bottom">.NET</div>
                             </div>
                             <div class="box box9">
                                 <div class="box__face box__face--front"></div>

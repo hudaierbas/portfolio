@@ -80,20 +80,26 @@ const checkAnimElementsPos = () => {
 
 //about video
 const startAboutAnim = () => {
-  if (aboutVideo.offsetTop - window.scrollY <= window.innerHeight / 2) {
-    setTimeout(() => {
-      aboutVideo.play();
-    }, 1400);
-    setTimeout(() => {
-      aboutVideo.pause();
-    }, 3900);
-    const video1 = document.getElementById("video1");
-    const video2 = document.getElementById("video2");
-    setTimeout(() => {
-      video1.style.opacity = 1;
-    }, 3400);
-    setTimeout(() => {
-      video2.style.opacity = 1;
-    }, 3600);
-  }
+  // const video1 = document.getElementById("video1");
+  // const video2 = document.getElementById("video2");
+  // video1.style.opacity = 0;
+  // video2.style.opacity = 0;
+  // if (aboutVideo.offsetTop - window.scrollY <= window.innerHeight / 2) {
+  //   setTimeout(() => {
+  //     aboutVideo.play();
+  //   }, 1400);
+  //   setTimeout(() => {
+  //     video1.style.opacity = 1;
+  //   }, 3500);
+  //   setTimeout(() => {
+  //     video2.style.opacity = 1;
+  //   }, 3700);
+  // }
+};
+
+//mobile nav
+const navMob = document.getElementById("nav-mob");
+
+const toggleNav = () => {
+  navMob.classList.toggle("ham-active");
 };

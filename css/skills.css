@@ -458,3 +458,25 @@
 .box4.box-anim-end {
   animation: box4-anim-end 0.5s ease;
 }
+
+@media only screen and (max-width: 1150px) {
+  .scene {
+    left: 200px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .scene {
+    left: 170px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .scene {
+    transform: scale(0.7);
+    left: 80px;
+    bottom: 0;
+  }
+  .about-bottomRight {
+    height: 400px;
+  }
+}
