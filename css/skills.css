@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.scene:hover .box__face {
+  color: white;
+}
+
 .box {
   width: 300px;
   height: 200px;
@@ -477,6 +481,6 @@
     bottom: 0;
   }
   .about-bottomRight {
-    height: 400px;
+    height: 450px;
   }
 }

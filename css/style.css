@@ -27,7 +27,7 @@ a {
   justify-content: center;
 }
 #canvas {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -442,7 +442,6 @@ a {
   font-size: 1.8rem;
   width: 100%;
   margin: 2px;
-  height: 50px;
   background-color: #1e242c;
   padding: 10px;
   color: #fff;
@@ -594,13 +593,20 @@ a {
     font-size: 3rem;
   }
   .cta {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     width: 190px;
   }
   .portfolio-item {
     flex: 1;
     min-width: 300px !important;
     margin: 0;
+    height: 240px;
+  }
+  .portfolio-item:hover .portfolio-item-exp {
+    margin-top: 40px;
+  }
+  .portfolio-item:hover .portfolio-item-button-container {
+    margin-bottom: 40px;
   }
   #aboutVideo {
     width: 100vw;
@@ -608,6 +614,28 @@ a {
   .about-bottomLeft {
     height: 100%;
     margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .about-bottomLeft > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .about-bottomLeft > a {
+    font-size: 1.5rem;
+  }
+  #contact h2 {
+    font-size: 1.6rem;
+  }
+  #contact input {
+    font-size: 1.4rem;
+  }
+  #contact textarea {
+    height: 150px;
+  }
+  #about .about {
+    padding-bottom: 50px !important;
   }
 }
 
@@ -628,7 +656,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .nav-container {
     width: 100%;
     position: relative;

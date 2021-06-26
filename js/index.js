@@ -30,7 +30,13 @@ window.onscroll = () => {
     contactLink.classList.add("active");
   }
   checkNavPos();
-  checkAnimElementsPos();
+  if (
+    !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    checkAnimElementsPos();
+  }
 };
 
 //navbar animation and position fixed
@@ -103,3 +109,18 @@ const navMob = document.getElementById("nav-mob");
 const toggleNav = () => {
   navMob.classList.toggle("ham-active");
 };
+
+//detect mobile device
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  //remove aniamtions if mobile device detected
+  for (let index = 0; index < animElements.length; index++) {
+    animElements[index].classList.toggle("anim");
+  }
+  for (let index = 0; index < animPortfolio.length; index++) {
+    animPortfolio[index].style.opacity = 1;
+  }
+}
