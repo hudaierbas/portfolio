@@ -46,13 +46,11 @@
             <div class="about-bottom">
                 <div class="about-bottomLeft animate__animated anim" data-animation="slideInLeft">
                     <div class="videoCont">
-                        <video id="aboutVideo" src="img/aboutShort.mp4" muted="muted"></video>
-                        <!-- <div id="video1">Responsive</div>
-                        <div id="video2">Dynamic</div> -->
+                        <video id="aboutVideo" src="img/about_Trim.mp4" muted="muted"></video>
                     </div>
                     
                     <h2>Who am I ?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, veritatis atque dignissimos molestiae, qui voluptatem dolorem tenetur hic amet magnam et dolores ipsam ullam blanditiis vitae perspiciatis illo in totam?</p>
+                    <p>I am a web developer that has great passion to find the best solution for our needs and create dynamic user experiences. </p>
                     <a href="#contact">Let's design your dreams.</a>
                 </div>
                 <div id="about-bottomRight" class="about-bottomRight animate__animated anim" data-animation="slideInRight">
@@ -163,47 +161,48 @@
                 <div class="section-title-line animate__animated anim" data-animation="slideInRight"></div>
             </div>
             <div id="portfolioBottom" class="portfolio-bottom">
-                <div class="portfolio-item animate__animated" style="opacity: 0; " >
+                <div class="portfolio-item animate__animated" style="opacity: 0; background: url(./img/11.jpg) center center / cover; " >
                     <div class="portfolio-item-exp">
-                        <h3>Portfolio Item 1</h3>
-                        <p>React JS / Node JS</p>
+                        <h3>Amazone Clone</h3>
+                        <p>React.js</p>
                     </div>
                     <div class="portfolio-item-button-container">
                         <div class="portfolio-item-button" onclick="openModal(1)">LEARN MORE</div>
                     </div>                    
                 </div>
-                <div class="portfolio-item animate__animated" style="animation-delay: .2s; opacity: 0; transition-delay: .2s;">
+                <div class="portfolio-item animate__animated" style="animation-delay: .2s; opacity: 0; transition-delay: .2s;background: url(./img/31.jpg) center center / cover;">
                     <div class="portfolio-item-exp">
-                        <h3>Portfolio Item 1</h3>
-                        <p>React JS / Node JS</p>
-                    </div>
-                    <div class="portfolio-item-button-container">
-                        <div class="portfolio-item-button" onclick="openModal(2)">LEARN MORE</div>
-                    </div>
-                </div>
-                <div class="portfolio-item animate__animated" style="animation-delay: .3s; opacity: 0; transition-delay: .3s;">
-                    <div class="portfolio-item-exp">
-                        <h3>Portfolio Item 1</h3>
-                        <p>React JS / Node JS</p>
+                        <h3>Ankh UO</h3>
+                        <p>React.js / Node.js</p>
                     </div>
                     <div class="portfolio-item-button-container">
                         <div class="portfolio-item-button" onclick="openModal(3)">LEARN MORE</div>
                     </div>
                 </div>
-                <div class="portfolio-item animate__animated" style="animation-delay: .4s; opacity: 0; transition-delay: .4s;">
+                <div class="portfolio-item animate__animated" style="animation-delay: .3s; opacity: 0; transition-delay: .3s;background: url(./img/42.jpg) center center / cover;">
                     <div class="portfolio-item-exp">
-                        <h3>Portfolio Item 1</h3>
-                        <p>React JS / Node JS</p>
+                        <h3>Whatsapp Clone</h3>
+                        <p>React.js / Node.js</p>
                     </div>
                     <div class="portfolio-item-button-container">
                         <div class="portfolio-item-button" onclick="openModal(4)">LEARN MORE</div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated" style="animation-delay: .4s; opacity: 0; transition-delay: .4s;background: url(./img/21.jpg) center center / cover;">
+                    <div class="portfolio-item-exp">
+                        <h3>BlogNine</h3>
+                        <p>Asp.Net Core</p>
+                    </div>
+                    <div class="portfolio-item-button-container">
+                        <div class="portfolio-item-button" onclick="openModal(2)">LEARN MORE</div>
                     </div>
                 </div>
             </div>        
         </div>
         <div id="modal" class="modal">
             <div id="modalCont" class="modal-container animate__animated">
-                <div id="modalImg" class="modal-img">
+                <div  class="modal-img">
+                    <img id="modalImg" src="" alt="Loading">
                     <div id="modalImgRight" onclick="changeModalImg(1)">
                         <i class="fas fa-chevron-right fa-2x"></i>
                     </div>
@@ -218,8 +217,8 @@
                     <p id="modalDetail"></p>
                     <div class="modal-bottom">
                         <div class="modal-links">
-                            <a id="modalLinkLive" href="#">VIEW SITE</a>
-                            <a id="modalLinkCode" href="#">VIEW CODE</a>
+                            <a id="modalLinkLive" href="#" target="_blank">VIEW SITE</a>
+                            <a id="modalLinkCode" href="#" target="_blank">VIEW CODE</a>
                         </div>
                         <div class="modal-close" onclick="closeModal()">
                             <i class="fas fa-times"></i>
@@ -238,14 +237,14 @@
                 <h2 class="animate__animated anim" data-animation="slideInLeft">Have a question or want to work together?</h2>
             </div>
             <div class="contact-bottom animate__animated anim" data-animation="slideInRight">
-                <form action="">
+                <div id="contact__form">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="text" id="email" name="email" placeholder="Email" required>
-                        <textarea placeholder="Your message" name="message" id="message" cols="50" rows="10" > </textarea>
+                        <input type="text" id="formName" name="name" placeholder="Name" required>
+                        <input type="text" id="formEmail" name="email" placeholder="Email" required>
+                        <textarea type="text" placeholder="Your message" name="message" id="formMessage" cols="50" rows="10" > </textarea>
                     </div>
                     <button type="submit" class="cta">SUBMIT</button>
-                </form>
+                </div>
             </div>
         </div>
         <footer id="footer">

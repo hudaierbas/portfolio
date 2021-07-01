@@ -85,22 +85,17 @@ const checkAnimElementsPos = () => {
 };
 
 //about video
+var aboutAnim = 0;
 const startAboutAnim = () => {
-  // const video1 = document.getElementById("video1");
-  // const video2 = document.getElementById("video2");
-  // video1.style.opacity = 0;
-  // video2.style.opacity = 0;
-  // if (aboutVideo.offsetTop - window.scrollY <= window.innerHeight / 2) {
-  //   setTimeout(() => {
-  //     aboutVideo.play();
-  //   }, 1400);
-  //   setTimeout(() => {
-  //     video1.style.opacity = 1;
-  //   }, 3500);
-  //   setTimeout(() => {
-  //     video2.style.opacity = 1;
-  //   }, 3700);
-  // }
+  if (
+    aboutVideo.offsetTop - window.scrollY <= window.innerHeight / 2 &&
+    aboutAnim === 0
+  ) {
+    setTimeout(() => {
+      aboutVideo.play();
+    }, 1000);
+    aboutAnim = 1;
+  }
 };
 
 //mobile nav
@@ -124,3 +119,26 @@ if (
     animPortfolio[index].style.opacity = 1;
   }
 }
+
+//contact form
+$("#contact-form").submit(function (e) {
+  e.preventDefault();
+
+  var formValue = {
+    name: document.getElementById("formName").value,
+    mail: document.getElementById("formMail").value,
+    message: document.getElementById("formMessage").value,
+  };
+
+  $.ajax({
+    url: "https://formspree.io/f/xrgrlawl",
+    method: "POST",
+    data: { formValue },
+    dataType: "json",
+  }).done(function (response) {
+    //$("#success").addClass("expand");
+    $("#contact-form")
+      .find("input[type=text], input[type=email], textarea")
+      .val("");
+  });
+});

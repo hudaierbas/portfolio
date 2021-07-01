@@ -121,11 +121,7 @@ a {
 .about-bottomRight > h2 {
   color: #555759;
   font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.about-bottomLeft > p {
-  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .videoCont {
@@ -156,8 +152,9 @@ a {
 }
 .about-bottomLeft > p {
   font-size: 1.8rem;
-  font-weight: 300;
   line-height: 2.6rem;
+  padding: 10px;
+  color: #616161;
 }
 
 .about-bottomLeft > a {
@@ -224,7 +221,7 @@ a {
 .portfolio-item {
   min-width: 500px;
   height: 350px;
-  background: url("../img/he.png") center center / cover;
+  background-color: white;
   margin: 10px;
   position: relative;
   transition: 0.5s ease;
@@ -312,12 +309,16 @@ a {
 .modal-container {
   background-color: white;
   width: 700px;
-  height: 700px;
+  height: 400px;
 }
 .modal-img {
-  width: 700px;
-  height: 450px;
+  max-width: 700px;
+  max-height: 450px;
   position: relative;
+  border-bottom: 2px solid #393c3d;
+}
+.modal-img > img {
+  max-width: 100%;
 }
 #modalImgRight,
 #modalImgLeft {
@@ -343,7 +344,6 @@ a {
 }
 .modal-info {
   width: 700px;
-  height: 250px;
   background-color: white;
   padding: 20px;
   display: flex;
@@ -352,10 +352,13 @@ a {
 }
 .modal-info > h2 {
   font-size: 2.4rem;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  letter-spacing: 0.1rem;
 }
 .modal-info > h3 {
-  font-size: 1.8rem;
-  color: rgb(168, 163, 163);
+  font-size: 1.6rem;
+  color: rgb(168, 163, 163, 0.8);
 }
 .modal-info > p {
   margin-right: 20px;
@@ -364,7 +367,7 @@ a {
 }
 .modal-line {
   width: 100%;
-  border-top: 1px solid rgb(168, 163, 163);
+  border-top: 1px solid rgb(168, 163, 163, 0.5);
   margin: 20px 0;
 }
 .modal-links {
@@ -642,7 +645,6 @@ a {
 @media only screen and (max-width: 700px) {
   .modal-container {
     width: 100vw;
-    min-height: 700px !important;
   }
   .modal {
     padding-top: 0;
