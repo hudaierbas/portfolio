@@ -591,6 +591,10 @@ a {
   transition: 0.5s ease;
 }
 
+.preload {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   #home h1 {
     font-size: 3rem;
